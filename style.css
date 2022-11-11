@@ -1,0 +1,138 @@
+/* header */
+
+header{
+    background-color: rgb(17, 17, 17);
+}
+
+nav div .navbar-nav a {
+    color: grey;
+}
+
+nav div .navbar-nav .contacto {
+    color: rgb(255, 143, 161) !important;
+}
+
+nav div .navbar-nav a:hover {
+    color: white;
+    transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    -ms-transform: scale(1,1);
+    -o-transform: scale(1,1);
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -ms-transition: .5s all;
+    -o-transition: .5s all;
+}
+
+.navbar-toggler{
+    border: none;
+    color: transparent;
+}
+
+/* main */
+/* banner */
+
+.banner{
+    height: 75vh;
+}
+
+.banner>img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-banner{
+    min-height: 100vh;
+}
+
+main .texto-inicio {
+    margin-top: 20px;
+    margin-bottom: 2rem;
+}
+
+.boton-banner{
+    background-color: rgb(255, 170, 206);
+    border-color: rgb(255, 170, 206);
+}
+
+/* cards */
+
+.filling{
+    background-color: rgb(236, 155, 196);
+    border-color: rgb(236, 155, 196);
+}
+
+.rose{
+    background-color: rgb(148, 82, 82);
+    border-color: rgb(148, 82, 82);
+}
+
+.card-design{
+    background-color: rgb(167, 129, 141);
+}
+
+.tickets-cards>div div{
+    border-top-right-radius: 0%; 
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.tickets-cards .estudiante{
+    border-color: rgb(22, 140, 219);
+} 
+
+.tickets-cards .trainee{
+    border-color: rgb(72, 188, 192);
+} 
+
+.tickets-cards .junior{
+    border-color: rgb(247, 215, 76);
+}
+
+/* formularios */
+
+.dotted{
+    border-bottom: dotted;
+    border-color: rgb(71, 71, 71);
+}
+
+form>div>div>button.btn{
+    background-color: rgb(209, 153, 187);
+    border: none;
+}
+
+
+/* footer */
+
+footer{
+    background-color: rgb(17, 17, 17);
+    padding: 15px;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(219, 219, 219);
+}
+
+footer a:hover{
+    color: white;
+    transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    -ms-transform: scale(1,1);
+    -o-transform: scale(1,1);
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -ms-transition: .5s all;
+    -o-transition: .5s all;
+}
+
+footer .icon{
+    width: 30px;
+    filter: invert(1);
+    -webkit-filter: invert(1);
+}

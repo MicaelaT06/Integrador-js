@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="src\sakuraicon.png">
+    <title>Comprar Tickets</title>
+</head>
+<body>
+    <header>
+        <section class="inicio" id="inicio">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><img class="" src="src\sakuraicono.png" alt="logo" width="50">Tokyo Tatt</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                                <a class="nav-link" href="index.html #tattoos">Tattoos</a>
+                                <a class="nav-link" href="index.html #diseños">Diseños</a>
+                                <a class="nav-link" href="#contacto">Redes</a>
+                                <a class="contacto nav-link" href="#contacto">Contacto</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </header>
+    
+    <!-- cards -->
+    <main>
+        <section>
+            <div class="tickets-cards card-group row-cols-sm-6 mx-4 gap-2 justify-content-center">
+                <div class="col">
+                    <div id="cardE" class="estudiante card mt-4 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Estudiante</h5>
+                            <p class="card-text">Tienen un descuento</p>
+                            <p><strong>80%</strong></p>
+                            <small class="text-muted">* presentar documentación</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="cardT" class="trainee card mt-4 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Trainee</h5>
+                            <p class="card-text">Tienen un descuento</p>
+                            <p><strong>50%</strong></p>
+                            <small class="text-muted">* presentar documentación</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="cardJ" class="junior card mt-4 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Junior</h5>
+                            <p class="card-text">Tienen un descuento</p>
+                            <p><strong>15%</strong></p>
+                            <small class="text-muted">* presentar documentación</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        <section>
+            <div class="d-flex flex-column align-items-center mt-2">
+                <p class="text-uppercase mb-0">venta</p>
+                <h2 class="text-uppercase mb-0">valor de ticket $200</h2>
+            </div>
+        </section>
+
+<!-- formulario -->
+        <section>
+            <form id="ticketsForm" name="form" class="container">
+                <div class="row gx-1 col-sm-7 mx-auto mt-1 p-3">
+                    <div class="col">
+                        <input id="firstName" name="nombre" type="text" class="form-control firstName" placeholder="Nombre" aria-label="Nombre">
+                    </div>
+                    <div class="col">
+                        <input id="lastName" name="apellido" type="text" class="form-control lastName" placeholder="Apellido" aria-label="Apellido">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <input type="email" name="email" class="form-control emailTickets" placeholder="Correo" aria-label="Correo">
+                    </div>
+                    <div class="col labelCantidad">                
+                        <label for="formControlInput" class="form-label">Cantidad</label>
+                        <input id="cantidadTickets" type="text" class="form-control cantidadTickets" id="formControlInput" placeholder="cantidad">
+                    </div>
+                    <div class="col labelCategoria">
+                        <label for="formControlInput" class="form-label">Categoria</label>
+                        <select id="selectionCategory" class="form-select selectionCategory" aria-label="Default select">
+                            <option value="valueEstudiante">Estudiante</option>
+                            <option value="valueTrainee">Trainee</option>
+                            <option value="valueJunior">Junior</option>
+                        </select>
+                    </div>
+                    <div class="mt-4">
+                        <div id="totalBuy" class="ticketsValue alert alert-primary" role="alert">
+                            Total a Pagar: $
+                        </div>
+                    </div>
+                    <div class="col mt-2">
+                        <button id="btnBorrar" class="col-sm-12 enviar btn btn-dark" type="reset">Borrar</button>
+                    </div>
+                    <div class="col mt-2">
+                        <button id="btnResumen" class="col-sm-12 enviar btn btn-dark" type="button">Resumen</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="d-flex mt-5">
+        <section class="footer" id="contacto"></section>
+            <div class="container-fluid py-3 text-light">
+                <nav class="row d-flex flex-column flex-md-row text-center justify-content-around">
+                    <a href="" class="col href">Preguntas frecuentes</a>
+                    <a href="" class="col href">Prensa</a>
+                    <a href="" class="col href">Conferencias</a>
+                    <a href="" class="col href">Terminos y condiciones</a>
+                    <a href="" class="col href">Privacidad</a>
+                    <a href="https://wa.link/o5i248" class="col href">Contacto</a>
+                    <a href="https://www.instagram.com/tokyotattooer/?next=%2F" class="col href"><img class="icon icono-ig" src="src\instagramicon.png" alt="instagram"></a>
+                </nav>
+            </div>
+        </section>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<script src="tickets.js"></script>
+</body>
+
+</html>
