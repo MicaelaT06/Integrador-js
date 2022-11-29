@@ -38,9 +38,9 @@
     <!-- cards -->
     <main>
         <section>
-            <div class="tickets-cards card-group row-cols-sm-6 mx-4 gap-2 justify-content-center">
+            <div id="discountsCards" class="tickets-cards card-group row-cols-sm-6 mx-4 gap-2 justify-content-center" name="cards">
                 <div class="col">
-                    <div id="cardE" class="estudiante card mt-4 text-center">
+                    <div id="cardStudent" class="student card mt-4 text-center">
                         <div class="card-body">
                             <h5 class="card-title">Estudiante</h5>
                             <p class="card-text">Tienen un descuento</p>
@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div id="cardT" class="trainee card mt-4 text-center">
+                    <div id="cardTrainee" class="trainee card mt-4 text-center">
                         <div class="card-body">
                             <h5 class="card-title">Trainee</h5>
                             <p class="card-text">Tienen un descuento</p>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div id="cardJ" class="junior card mt-4 text-center">
+                    <div id="cardJunior" class="junior card mt-4 text-center">
                         <div class="card-body">
                             <h5 class="card-title">Junior</h5>
                             <p class="card-text">Tienen un descuento</p>
@@ -93,12 +93,12 @@
                     </div>
                     <div class="col labelCantidad">                
                         <label for="formControlInput" class="form-label">Cantidad</label>
-                        <input id="cantidadTickets" type="text" class="form-control cantidadTickets" id="formControlInput" placeholder="cantidad">
+                        <input id="amountOfTickets" type="text" class="form-control amountOfTickets" id="formControlInput" placeholder="cantidad">
                     </div>
                     <div class="col labelCategoria">
                         <label for="formControlInput" class="form-label">Categoria</label>
                         <select id="selectionCategory" class="form-select selectionCategory" aria-label="Default select">
-                            <option value="valueEstudiante">Estudiante</option>
+                            <option value="valueStudent">Estudiante</option>
                             <option value="valueTrainee">Trainee</option>
                             <option value="valueJunior">Junior</option>
                         </select>
@@ -109,10 +109,10 @@
                         </div>
                     </div>
                     <div class="col mt-2">
-                        <button id="btnBorrar" class="col-sm-12 enviar btn btn-dark" type="reset">Borrar</button>
+                        <button id="deleteButton" class="deleteButton col-sm-12 enviar btn btn-dark" type="reset">Borrar</button>
                     </div>
                     <div class="col mt-2">
-                        <button id="btnResumen" class="col-sm-12 enviar btn btn-dark" type="button">Resumen</button>
+                        <button id="summaryButton" class="summaryButton col-sm-12 enviar btn btn-dark" type="button">Resumen</button>
                     </div>
                 </div>
             </form>
